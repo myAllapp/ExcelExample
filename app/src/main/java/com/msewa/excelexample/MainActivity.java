@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
 //        WriteExcel test = new WriteExcel();
 //        test.setOutputFile("c:/temp/lars.xls");
 //        try {
