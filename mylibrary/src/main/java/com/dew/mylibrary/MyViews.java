@@ -104,10 +104,13 @@ public class MyViews extends View {
 
     public MyViews(Context context) {
         super(context);
+        init(context,null);
+
     }
 
     public MyViews(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init(context,attrs);
     }
 
     public MyViews(Context context, AttributeSet attrs, int defStyleAttr) {
@@ -133,7 +136,6 @@ public class MyViews extends View {
         mTextSize = (int) (mTextSize * density);
 
         mIndicatorIcon = ContextCompat.getDrawable(context, R.drawable.indicator);
-
 
         if (attrs != null) {
             // Attribute initialization
